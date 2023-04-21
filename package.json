@@ -1,0 +1,33 @@
+{
+  "name": "@yunflyjs/yunfly-plugin-current-context",
+  "version": "1.0.0",
+  "main": "./dist/app.js",
+  "typings": "dist/app.d.ts",
+  "description": "yunfly context trace plugin.",
+  "keywords": [
+    "yunfly"
+  ],
+  "scripts": {
+    "build": "gts clean && tsc",
+    "dev": "tsc --watch"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "engines": {
+    "node": ">=10.13.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@yunflyjs/yunfly-core": "^0.0.1-beta.15",
+    "gts": "^3.1.1",
+    "typescript": "^5.0.4"
+  }
+}
